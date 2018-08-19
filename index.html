@@ -10,15 +10,96 @@
 
 <body>
 
-	<header>
-	</header>
+	<div id="main">
 
-	<main>
-	</main>
+		<header>
+			<h1 id="title">Survey Form</h1>
+		</header>
 
-	<footer>
-	</footer>
+		<main>
 
+			<div id="form_caption">
+				<p id="description">Let us know how we can improve freeCodeCamp</p>
+			</div>
+
+			<form id="survey-form">
+
+				<div class="field-info"><label id="name-label" for="name">* Name:</label></div>
+				<div class="fieldset">
+					<input type="text" name="name" id="name" placeholder="Enter your name" required>
+				</div>
+
+				<div class="field-info"><label id="email-label" for="email">* Email:</label></div>
+				<div class="fieldset">
+					<input type="email" name="email" id="email" placeholder="Enter your email" required>
+				</div>
+
+				<div class="field-info"><label id="number-label" for="number">* Age:</label></div>
+				<div class="fieldset">
+					<input type="number" name="number" id="number" placeholder="Age" min="12" max="99">
+				</div>
+
+				<div class="field-info">Which option best describes your current role?</div>
+				<div class="fieldset">
+					<select name="role" id="role">
+						<option disabled>Select an option</option>
+						<option value="Student">Student</option>
+						<option value="Full time job">Full time job</option>
+						<option value="Full time learner">Full time learner</option>
+						<option values="Prefer not to say">Prefer not to say</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+
+				<div class="field-info">* How likely is that you would recommend<br>freeCodeCamp to a friend?</div>
+				<div class="fieldset">
+					<label><input type="radio" name="recommend" value="Definitely"> Definitely</label>
+					<label><input type="radio" name="recommend" value="Maybe"> Maybe</label>
+					<label><input type="radio" name="recommend" value="Not sure"> Not sure</label>
+				</div>
+
+				<div class="field-info">What do you like most in FCC:</div>
+				<div class="fieldset">
+					<select name="likemost" id="dropdown">
+						<option disabled>Select an option</option>
+						<option value="Challenges">Challenges</option>
+						<option value="Projects">Projects</option>
+						<option value="Community">Community</option>
+						<option values="Open source">Open source</option>
+					</select>
+				</div>
+
+				<div class="field-info">Things that should be improved in the future<br>(Check all that apply):</div>
+				<div class="fieldset">
+					<label><input type="checkbox" name="changes[]" value="Front-end Projects"> Front-end Projects</label>
+					<label><input type="checkbox" name="changes[]" value="Back-end Projects"> Back-end Projects</label>
+					<label><input type="checkbox" name="changes[]" value="Data Visualization"> Data Visualization</label>
+					<label><input type="checkbox" name="changes[]" value="Challenges"> Challenges</label>
+					<label><input type="checkbox" name="changes[]" value="Open Source Community"> Open Source Community</label>
+					<label><input type="checkbox" name="changes[]" value="Gitter help rooms"> Gitter help rooms</label>
+					<label><input type="checkbox" name="changes[]" value="Videos"> Videos</label>
+					<label><input type="checkbox" name="changes[]" value="City Meetups"> City Meetups</label>
+					<label><input type="checkbox" name="changes[]" value="Wiki"> Wiki</label>
+					<label><input type="checkbox" name="changes[]" value="Forum"> Forum</label>
+					<label><input type="checkbox" name="changes[]" value="Additional Courses"> Front</label>
+				</div>
+
+				<div class="field-info">Any Comments or Suggestions?</div>
+				<div class="fieldset">
+					<textarea placeholder="Enter your comment here..." name="comments"></textarea>
+				</div>
+
+				<div class="submit">
+					<input type="submit" value="Submit" name="submit" id="submit">
+				</div>
+
+			</form>
+
+		</main>
+
+	</div>
+
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
